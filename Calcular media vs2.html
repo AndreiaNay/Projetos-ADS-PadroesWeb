@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="_css/style.css"> 
+   <title>JavaScript</title>
+</head>
+   <body>
+      <header id="js-cabecalho">
+         <h1>Padrões Web</h1>
+         <h2>JavaScript</h2>
+      </header>
+      
+        <script>
+         function verificarSituacao() {
+            let n1 = parseFloat (document.getElementById("idNota1").value);
+            let n2 = parseFloat (document.getElementById("idNota2").value);
+            let media = (n1 + n2) / 2;
+
+            let situacao = ""; 
+            if ( media >= 6.0) {
+               situacao = "Aprovado";
+               cor = "#0000FF";
+
+            } else { 
+               if ( media >= 2){
+                  situacao = "Reprovado"
+                  cor = "#FF0000";
+               } 
+            }
+            document.getElementById ("media").innerHTML = media;
+            document.getElementById ("situacao").innerHTML = situacao;
+            document.getElementById ("situacao").style.color = cor;
+         }
+      </script>
+
+   </body>
+</html>
