@@ -5,18 +5,23 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="_css/style.css"> 
-   <title>JavaScript</title>
+   <title>Calculadora</title>
 </head>
    <body>
       <header id="js-cabecalho">
-         <h1>Padrões Web</h1>
-         <h2>JavaScript</h2>
+         <h1>JavaScript</h1>
+         <h2>Calculo de Médias</h2>
       </header>
+
+      <div class="resultado">
+         <h1 id="media"></h1>
+         <h2 id="situacao"></h2>
+      </div>
       
         <script>
-         function verificarSituacao() {
-            let n1 = parseFloat (document.getElementById("idNota1").value);
-            let n2 = parseFloat (document.getElementById("idNota2").value);
+            let n1 = parseFloat (prompt("Nota1"));
+            let n2 = parseFloat (prompt("Nota2"));
+
             let media = (n1 + n2) / 2;
 
             let situacao = ""; 
@@ -25,15 +30,17 @@
                cor = "#0000FF";
 
             } else { 
-               if ( media >= 2){
-                  situacao = "Reprovado"
-                  cor = "#FF0000";
-               } 
+            if ( media >= 2){
+               situacao = "Reprovado"
+               cor = "#FF0000";
+            } else {
+               situacao = "Reprovado"
+               cor = "#FF0000";
+            } 
             }
             document.getElementById ("media").innerHTML = media;
             document.getElementById ("situacao").innerHTML = situacao;
             document.getElementById ("situacao").style.color = cor;
-         }
       </script>
 
    </body>

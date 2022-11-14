@@ -3,89 +3,15 @@
    padding: 0px;}
 :root{ /* Cores Utilizadas */
    --cor-AzulEscuro: #05517D;
-   --cor-Azul-Fonte: #094D81;
+   --cor-AzulCinza: #91b3c7;
    --cor-AzulMuitoEscuro: #06194E;
    --cor-GhostWhite: #F8F8FF;
-   --cor-AliceBlue: #F0F8FF;
-   --cor-hover-AzulBebe: #52E3FF;
    --cor-fundo-SkyBlue: rgba(135,206,235, .3);}
 
 body { 
    background-color: var(--cor-fundo-SkyBlue);
    font-family: Arial, sans-serif;} 
-
-
-/*----------------------------- CSS da Página Principal -----------------------------*/
-#home-cabecalho {
-   background-color: var(--cor-AzulEscuro);
-   color: var(--cor-GhostWhite);
-   text-align: center;
-   width: auto;}
-#home-cabecalho h1 {
-   padding-top: 10px;
-   padding-bottom: 10px;}
-#home-cabecalho h2 {
-   padding-bottom: 10px;}
-
-#home-content {
-   width: auto;
-   height: 400px;
-   display: flex;
-   padding: 10px;}
-
-.home-btn-anot {
-   width: 250px;
-   height: 300px;
-   margin: 20px;
-   margin-top: 120px;
-   margin-left: 35px;
-   border-radius: 15px;
-   border: 2px solid var(--cor-AzulEscuro);
-   background-image: url(../_img/Fundo_anot.png);}
-.home-btn-anot h2 {
-   text-align: center;
-   text-shadow: 2px 2px var(--cor-AliceBlue);
-   font-size: 25pt;
-   margin-top: 125px;}
-
-.home-btn-anot a {
-   text-decoration: none;
-   color: var(--cor-AzulMuitoEscuro);} 
-.home-btn-anot a:hover {
-   color: var(--cor-AliceBlue);
-   text-shadow: 2px 2px var(--cor-Azul-Fonte);} 
-
-.home-btn-ativ { 
-   width: 250px;
-   height: 300px;
-   margin: 20px;
-   margin-top: 120px;
-   margin-left: 35px;
-   text-align: center;
-   border-radius: 15px;
-   border: 2px solid var(--cor-AzulEscuro);}
-
-.home-btn-pesq { 
-   width: 250px;
-   height: 300px;
-   margin: 20px;
-   margin-top: 120px;
-   margin-left: 35px;
-   text-align: center;
-   border-radius: 15px;
-   border: 2px solid var(--cor-AzulEscuro);}
-
-.home-btn-trab {
-   width: 250px;
-   height: 300px;
-   margin: 20px;
-   margin-top: 120px;
-   margin-left: 35px;
-   text-align: center;
-   border-radius: 15px;
-   border: 2px solid var(--cor-AzulEscuro);}
-
-/*------------------------------ CSS da Página Aula_JavaScript ------------------------------*/
+   
 #js-cabecalho {
    text-align: center;
    font-size: 20pt;
@@ -93,53 +19,9 @@ body {
    color: var(--cor-GhostWhite);
    background-color: var(--cor-AzulEscuro);}
 
-#js-container h2 ul li {
-   padding-left: 10px;}
-#js-container h2 {
-   margin-top: 20px;
-   margin-bottom: -20px;
-   padding-left: 10px;}
-
-.js-btn {
-   margin-top: 25px;
-   padding-left: 15px;
-   padding-bottom: 3px;}
-.js-ms {
-
-}
-.js-txm {
-   margin-top: 25px;
-   padding-left: 15px;
-   padding-bottom: 3px;}
-.js-txs {
-   margin-top: 25px;
-   padding-left: 15px;
-   padding-bottom: 3px;}
-#situacao {
-   width: auto;
-   margin-top: 20px;
-   padding: 5px;
-   text-align: center;
-   font-size: 20pt;}
-
-.js-listas {
-   margin-left: 23px;
-   margin-top: 25px;
-   padding: 4px;}
-.js-listas li {
-   padding-bottom: 5px;
-   font-size: 12pt;}
-
-#js-rodape {
-   width: auto;
-   background-color: var(--cor-AzulEscuro);
-   margin-top: 222px;
-   padding: 7px;
-   text-align: center;}
-#js-rodape a {
-   color: var(--cor-GhostWhite);
-   text-decoration: none;}
-#js-rodape a:hover {
-   color: var(--cor-hover-AzulBebe);}
-
-/*--------------------------- FIM do CSS da Página JavaScript ----------------------------*/
+.resultado {
+   margin-top: 30px;
+   padding: 10px;
+   background-color: var(--cor-AzulCinza);}
+.resultado h1 {
+   color: var(--cor-GhostWhite);}
